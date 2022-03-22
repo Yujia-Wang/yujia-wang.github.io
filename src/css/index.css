@@ -1,0 +1,50 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    color: #313843;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+	letter-spacing: .16rem;
+	word-spacing: .32rem;
+    color: #313843;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p, ul {
+	font-family: "Open Sans", sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.8em;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.16rem;
+    color: #313843;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
