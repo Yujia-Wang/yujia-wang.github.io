@@ -10,22 +10,22 @@ export default function ImgCompareImgComponent() {
     const imgCodeContainerRef = useRef(null);
 
     useEffect(() => {
-        let i;
+        // let i;
+        //
+        // for (i = 0; i < imgCodeContainerRef.current.length; i++) {
+        //     compareImages(imgCodeContainerRef[i]);
+        // }
 
-        for (i = 0; i < imgCodeContainerRef.current.length; i++) {
-            compareImages(imgCodeContainerRef[i]);
-        }
-
-        function compareImages(event, img) {
+        function compareImages(event) {
             let imgDesignWidth = imgDesignRef.current.width;
 
             imgCodeRef.current.width = imgDesignWidth;
 
-            let w;
+            // let w;
 
-            w = imgCodeContainerRef[i].current.offsetWidth;
-
-            imgCodeContainerRef[i].current.style.width = (w / 2) + "px";
+            // w = imgCodeContainerRef.current.width;
+            //
+            // imgCodeContainerRef.current.width = (w / 2) + "px";
 
             let currentMousePos = { x: -1, y: -1 };
             let a, x = 0;
@@ -33,14 +33,16 @@ export default function ImgCompareImgComponent() {
             currentMousePos.x = event.pageX;
             currentMousePos.y = event.pageY;
 
-            a = img.current.getBoundingClientRect();
+            a = imgCodeContainerRef.current.getBoundingClientRect();
 
             x = currentMousePos.x - a.left;
 
             if (x < 0) { x = 0; }
-            if (x > w) { x = w; }
+            // if (x > w) { x = w; }
 
-            img.current.width = x + "px";
+            imgCodeContainerRef.current.width = x;
+
+            console.log(imgCodeContainerRef);
 
             // console.log(currentMousePos.x, currentMousePos.y);
         }
