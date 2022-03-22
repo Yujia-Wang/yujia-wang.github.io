@@ -23,27 +23,29 @@ export default function ImgCompareImgComponent() {
 
             let w;
 
-            w = img.current.offsetWidth;
+            w = imgCodeContainerRef[i].current.offsetWidth;
 
-            img.current.style.width = (w / 2) + "px";
+            imgCodeContainerRef[i].current.style.width = (w / 2) + "px";
 
-            document.addEventListener("mousemove", () => {
-                let currentMousePos = { x: -1, y: -1 };
-                let a, x = 0;
+            let currentMousePos = { x: -1, y: -1 };
+            let a, x = 0;
 
-                currentMousePos.x = event.pageX;
-                currentMousePos.y = event.pageY;
+            currentMousePos.x = event.pageX;
+            currentMousePos.y = event.pageY;
 
-                a = img.current.getBoundingClientRect();
+            a = img.current.getBoundingClientRect();
 
-                x = currentMousePos.x - a.left;
+            x = currentMousePos.x - a.left;
 
-                if (x < 0) { x = 0; }
-                if (x > w) { x = w; }
+            if (x < 0) { x = 0; }
+            if (x > w) { x = w; }
 
-                img.current.width = x + "px";
-            });
+            img.current.width = x + "px";
+
+            // console.log(currentMousePos.x, currentMousePos.y);
         }
+
+        document.addEventListener("mousemove", compareImages);
 
         return () => document.removeEventListener("mousemove", compareImages)
     }, []);
