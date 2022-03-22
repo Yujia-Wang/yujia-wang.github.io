@@ -7,25 +7,49 @@ import homePageCode from "../image/home/homepage-code.svg";
 export default function ImgCompareImgComponent() {
     const imgDesignRef = useRef(null);
     const imgCodeRef = useRef(null);
+    const imgCodeContainerRef = useRef(null);
 
     useEffect(() => {
-        document.addEventListener("mousemove", compareImages(imgCodeRef))
+        let i;
 
-        function compareImages(event, img) {
+        for (i = 0; i < imgCodeContainerRef.current.length; i++) {
+            compareImages(imgCodeContainerRef[i]);
+        }
+
+        function compareImages(event) {
+            let imgDesignWidth = imgDesignRef.current.width;
+
+            imgCodeRef.current.width = imgDesignWidth;
+
+            console.log(imgCodeRef.current.width);
+
+            let w;
+
+            w = imgCodeContainerRef.current.offsetWidth;
+
+            imgCodeContainerRef.current.style.width = (w / 2) + "px";
+
             let currentMousePos = { x: -1, y: -1 };
             let a, x = 0;
 
             currentMousePos.x = event.pageX;
             currentMousePos.y = event.pageY;
 
-            a = img.getBoundingClientRect();
+            a = imgCodeContainerRef.current.getBoundingClientRect();
 
             x = currentMousePos.x - a.left;
 
-            console.log(currentMousePos.x, currentMousePos.y);
+            if (x < 0) { x = 0; }
+            if (x > w) { x = w; }
+
+            imgCodeContainerRef.current.width = x + "px";
+
+            // console.log(currentMousePos.x, currentMousePos.y);
         }
 
-        return () => document.removeEventListener("mousemove", compareImages(imgCodeRef))
+        document.addEventListener("mousemove", compareImages);
+
+        return () => document.removeEventListener("mousemove", compareImages)
     }, []);
 
     return (
@@ -33,7 +57,7 @@ export default function ImgCompareImgComponent() {
             <div className="img-comp-img">
                 <img id="homepage-design" ref={imgDesignRef} src={homePageDesign} width="100%" alt="bobo design"></img>
             </div>
-            <div className="img-comp-img img-comp-overlay">
+            <div ref={imgCodeContainerRef} className="img-comp-img img-comp-overlay">
                 <img id="homepage-code" ref={imgCodeRef} src={homePageCode} width="100%" alt="bobo code"></img>
             </div>
         </div>
