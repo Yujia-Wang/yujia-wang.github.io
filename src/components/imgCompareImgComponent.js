@@ -11,16 +11,14 @@ export default function ImgCompareImgComponent() {
 
     useEffect(() => {
 
+        let imgDesignWidth = imgDesignRef.current.width;
+
+        imgCodeRef.current.width = imgDesignWidth;
+
+        imgCodeContainerRef.current.style.width = (imgDesignWidth / 2) + "px";
+
+
         function compareImages(event) {
-            let imgDesignWidth = imgDesignRef.current.width;
-
-            imgCodeRef.current.width = imgDesignWidth;
-
-            let w;
-
-            w = imgCodeContainerRef.current.width;
-
-            imgCodeContainerRef.current.style.width = (imgDesignWidth / 2) + "px";
 
             let currentMousePos = { x: -1 };
             let a, x = 0;
@@ -48,7 +46,7 @@ export default function ImgCompareImgComponent() {
                 <img id="homepage-design" ref={imgDesignRef} src={homePageDesign} width="100%" alt="bobo design"></img>
             </div>
             <div ref={imgCodeContainerRef} className="img-comp-img img-comp-overlay">
-                <img id="homepage-code" ref={imgCodeRef} src={homePageCode} height="100%" alt="bobo code"></img>
+                <img id="homepage-code" ref={imgCodeRef} src={homePageCode} width="100%" alt="bobo code"></img>
             </div>
         </div>
     );
