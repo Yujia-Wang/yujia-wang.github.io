@@ -110,16 +110,18 @@
 .img-comp-img {
     width: 100%;
     overflow: hidden;
+
 }
 
 .img-comp-img img {
-  display:block;
-  vertical-align:middle;
+    display:block;
+    vertical-align:middle;
 }
 
 .img-comp-overlay {
     position: absolute;
     top: 0;
+    height: 100%;
 }
 
 #homepage-code {

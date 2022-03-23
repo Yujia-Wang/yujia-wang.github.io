@@ -1,11 +1,11 @@
 import SidebarComponent from "./components/sidebarComponent";
-import ProjectListComponent from "./components/projectListComponent";
+import HomepageComponent from "./components/homepageComponent";
 
 function App() {
   return (
       <div>
           <SidebarComponent />
-          <ProjectListComponent />
+          <HomepageComponent />
       </div>
   );
 }

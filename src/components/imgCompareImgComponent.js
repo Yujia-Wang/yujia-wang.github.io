@@ -10,41 +10,31 @@ export default function ImgCompareImgComponent() {
     const imgCodeContainerRef = useRef(null);
 
     useEffect(() => {
-        // let i;
-        //
-        // for (i = 0; i < imgCodeContainerRef.current.length; i++) {
-        //     compareImages(imgCodeContainerRef[i]);
-        // }
 
         function compareImages(event) {
             let imgDesignWidth = imgDesignRef.current.width;
 
             imgCodeRef.current.width = imgDesignWidth;
 
-            // let w;
+            let w;
 
-            // w = imgCodeContainerRef.current.width;
-            //
-            // imgCodeContainerRef.current.width = (w / 2) + "px";
+            w = imgCodeContainerRef.current.width;
 
-            let currentMousePos = { x: -1, y: -1 };
+            imgCodeContainerRef.current.style.width = (imgDesignWidth / 2) + "px";
+
+            let currentMousePos = { x: -1 };
             let a, x = 0;
 
             currentMousePos.x = event.pageX;
-            currentMousePos.y = event.pageY;
 
             a = imgCodeContainerRef.current.getBoundingClientRect();
 
             x = currentMousePos.x - a.left;
 
             if (x < 0) { x = 0; }
-            // if (x > w) { x = w; }
+            if (x > imgDesignWidth) { x = imgDesignWidth; }
 
-            imgCodeContainerRef.current.width = x;
-
-            console.log(imgCodeContainerRef);
-
-            // console.log(currentMousePos.x, currentMousePos.y);
+            imgCodeContainerRef.current.style.width = x + "px";
         }
 
         document.addEventListener("mousemove", compareImages);
@@ -58,7 +48,7 @@ export default function ImgCompareImgComponent() {
                 <img id="homepage-design" ref={imgDesignRef} src={homePageDesign} width="100%" alt="bobo design"></img>
             </div>
             <div ref={imgCodeContainerRef} className="img-comp-img img-comp-overlay">
-                <img id="homepage-code" ref={imgCodeRef} src={homePageCode} width="100%" alt="bobo code"></img>
+                <img id="homepage-code" ref={imgCodeRef} src={homePageCode} height="100%" alt="bobo code"></img>
             </div>
         </div>
     );
