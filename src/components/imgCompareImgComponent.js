@@ -17,9 +17,13 @@ export default function ImgCompareImgComponent() {
 
         imgCodeContainerRef.current.style.width = (imgDesignWidth / 2) + "px";
 
+        function resizeImage() {
+            let imgDesignWidth = imgDesignRef.current.width;
+
+            imgCodeRef.current.width = imgDesignWidth;
+        }
 
         function compareImages(event) {
-
             let currentMousePos = { x: -1 };
             let a, x = 0;
 
@@ -36,8 +40,12 @@ export default function ImgCompareImgComponent() {
         }
 
         document.addEventListener("mousemove", compareImages);
+        window.addEventListener("resize", resizeImage);
 
-        return () => document.removeEventListener("mousemove", compareImages)
+        return () => {
+            document.removeEventListener("mousemove", compareImages);
+            document.removeEventListener("resize", resizeImage);
+        }
     }, []);
 
     return (

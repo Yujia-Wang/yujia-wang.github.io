@@ -15,7 +15,7 @@ export default class HomepageComponent extends Component {
                 scrollingSpeed = {1000}
                 render={({ state, fullpageApi }) => {
                     return (
-                        <ReactFullpage.Wrapper className="fullpage-wrapper">
+                        <ReactFullpage.Wrapper>
                             <section className="intro section">
                                 <ImgCompareImgComponent/>
                                 <div className="job-title center">
@@ -25,7 +25,9 @@ export default class HomepageComponent extends Component {
                                     <FontAwesomeIcon icon={faAngleDoubleDown} fontSize="2.4rem"/>
                                 </div>
                             </section>
-                            <ProjectListComponent/>
+                            <section className="section">
+                                <ProjectListComponent/>
+                            </section>
                         </ReactFullpage.Wrapper>
                     );
                 }}

@@ -1,10 +1,12 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../css/index.css";
 import "../css/App.css";
 import logo from "../image/home/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/pro-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 
 export default function SidebarComponent() {
@@ -13,40 +15,35 @@ export default function SidebarComponent() {
             <Container>
                 <Row className="logo">
                     <Col className="center">
-                        <a href="index.html">
+                        <Link to="/">
                             <img src={logo} width="48" alt="logo" />
-                        </a>
+                        </Link>
                     </Col>
                 </Row>
                 <Row className="nav-space nav-text">
                     <Col className="center">
-                        <a href="index.html">HOME</a>
+                        <Link to="/">HOME</Link>
                     </Col>
                 </Row>
                 <Row className="nav-space nav-text">
                     <Col className="center">
-                        <a href="index.html">ABOUT</a>
+                        <Link to="/about">ABOUT</Link>
                     </Col>
                 </Row>
                 <Row className="nav-space nav-text">
                     <Col className="center">
-                        <a href="index.html">RESUME</a>
+                        <a href="index.html" target="_blank">RESUME</a>
                     </Col>
                 </Row>
                 <Row className="contact">
-                    <Col className="center original">
-                        <a href="">
+                    <Col md={12} className="center original">
+                        <a href="mailto:yj.wang0605@gmail.com" target="_blank">
                             <FontAwesomeIcon icon={faEnvelope} />
                         </a>
                     </Col>
-                    <Col className="center original">
-                        <a href="">
-                            <FontAwesomeIcon icon={faEnvelope} />
-                        </a>
-                    </Col>
-                    <Col className="center original">
-                        <a href="">
-                            <FontAwesomeIcon icon={faEnvelope} />
+                    <Col md={12} className="center original">
+                        <a href="https://www.linkedin.com/in/yujia-wang" target="_blank">
+                            <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                     </Col>
                 </Row>
