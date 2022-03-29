@@ -175,6 +175,14 @@
   display: none;
 }
 
+.horizontal-project a:first-child {
+    margin-left: 0rem;
+}
+
+.horizontal-project a:last-child {
+    margin-right: 11.2rem;
+}
+
 .project-container {
     width: 32rem;
     border-radius: 1.5rem;
@@ -182,14 +190,6 @@
     margin-left: 4.8rem;
     display: inline-block;
     transition: all .2s ease-in-out;
-}
-
-.project-container:first-child {
-    margin-left: 0rem;
-}
-
-.project-container:last-child {
-    margin-right: 11.2rem;
 }
 
 .project-container:hover {
