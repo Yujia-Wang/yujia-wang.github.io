@@ -6,6 +6,7 @@ import ImgCompareImgComponent from "./imgCompareImgComponent";
 import ProjectListComponent from "./projectListComponent";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleDown} from "@fortawesome/pro-light-svg-icons";
+import ScrollToTopComponent from "./scrollToTopComponent";
 
 export default function HomepageComponent() {
     return (
@@ -15,6 +16,7 @@ export default function HomepageComponent() {
             render={({ state, fullpageApi }) => {
                 return (
                     <ReactFullpage.Wrapper>
+                        <ScrollToTopComponent />
                         <section className="intro section">
                             <ImgCompareImgComponent/>
                             <div className="job-title center">

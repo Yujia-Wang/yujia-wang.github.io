@@ -2,10 +2,12 @@ import "../css/index.css";
 import SidebarComponent from "../components/sidebarComponent";
 import AboutIntroComponent from "../components/aboutIntroComponent";
 import FooterComponent from "../components/footerComponent";
+import ScrollToTopComponent from "../components/scrollToTopComponent";
 
 function Vstyle() {
   return (
       <div>
+          <ScrollToTopComponent />
           <SidebarComponent />
           <div className="content-wrapper">
               <AboutIntroComponent />
