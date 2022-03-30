@@ -98,7 +98,7 @@
 
 .intro {
     position: relative;
-    height: 100vh;
+    height: 100%;
     padding: 0 9.6rem;
 }
 
@@ -152,7 +152,7 @@
 /***************************/
 
 .project {
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -210,3 +210,5 @@
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
 }
+
+

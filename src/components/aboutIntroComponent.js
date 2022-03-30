@@ -19,8 +19,8 @@ import about12 from "../image/about/about12.jpg";
 
 export default function AboutIntroComponent() {
     return (
-        <div className="content-bottom-space">
-            <Container fluid>
+        <div>
+            <Container>
                 <Row>
                     <Col>
                         <img src={aboutMe} width="100%" alt="about image" />

@@ -6,7 +6,6 @@ import ImgCompareImgComponent from "./imgCompareImgComponent";
 import ProjectListComponent from "./projectListComponent";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleDown} from "@fortawesome/pro-light-svg-icons";
-import ScrollToTopComponent from "./scrollToTopComponent";
 
 export default function HomepageComponent() {
     return (
@@ -16,8 +15,7 @@ export default function HomepageComponent() {
             render={({ state, fullpageApi }) => {
                 return (
                     <ReactFullpage.Wrapper>
-                        <ScrollToTopComponent />
-                        <section className="intro section">
+                        <div className="intro section">
                             <ImgCompareImgComponent/>
                             <div className="job-title center">
                                 <span>UX/UI DESIGNER & ENGINEER</span>
@@ -25,10 +23,10 @@ export default function HomepageComponent() {
                             <div className="next-page center">
                                 <FontAwesomeIcon icon={faAngleDoubleDown} fontSize="2.4rem"/>
                             </div>
-                        </section>
-                        <section className="section">
+                        </div>
+                        <div className="section">
                             <ProjectListComponent/>
-                        </section>
+                        </div>
                     </ReactFullpage.Wrapper>
                 );
             }}

@@ -9,13 +9,13 @@ import Vstyle from "./page/vstyle";
 function App() {
   return (
       <BrowserRouter>
-          {/*<ScrollToTopComponent>*/}
+          <ScrollToTopComponent>
               <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="about" element={<About />} />
                   <Route path="vstyle" element={<Vstyle />} />
               </Routes>
-          {/*</ScrollToTopComponent>*/}
+          </ScrollToTopComponent>
       </BrowserRouter>
   );
 }
