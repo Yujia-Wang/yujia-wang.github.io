@@ -44,7 +44,7 @@ export default function ImgCompareImgComponent() {
 
         return () => {
             document.removeEventListener("mousemove", compareImages);
-            document.removeEventListener("resize", resizeImage);
+            window.removeEventListener("resize", resizeImage);
         }
     }, []);
 

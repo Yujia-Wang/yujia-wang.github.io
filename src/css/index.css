@@ -18,8 +18,16 @@ h1, h2, h3, h4 {
     color: #313843;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
 h2 {
     font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.4rem;
 }
 
 p, ul {
@@ -75,6 +83,15 @@ a:hover {
 
 .section-space {
     margin-top: 11.2rem;
+}
+
+.title-space {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+.section-title-space {
+    margin-bottom: 2.4rem;
 }
 
 

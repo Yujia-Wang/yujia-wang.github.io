@@ -12,10 +12,11 @@
 
 .logo {
     padding-top: 4.8rem;
+    padding-bottom: 8rem;
 }
 
 .nav-space {
-    margin-top: 4.8rem;
+    margin-top: 3.6rem;
 }
 
 .nav-text a {
@@ -86,6 +87,24 @@
 .contact .original a:hover:after {
     opacity: 1;
     width: 3.0rem;
+}
+
+.back {
+    padding-top: 4.8rem;
+    padding-bottom: 8rem;
+}
+
+.back a {
+    color: #fff;
+    font-size: 2.0rem;
+}
+
+.back svg {
+    transition: all .2s ease-in-out;
+}
+
+.back svg:hover {
+    transform: scale(1.4);
 }
 
 /***************************/
@@ -210,5 +229,88 @@
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
 }
+
+/****************************/
+/***** project specific *****/
+/****************************/
+
+.project-img-btn-wrapper {
+    width: 24rem;
+    position: absolute;
+    top: 85%;
+    left: 30%;
+}
+
+.project-img-btn {
+    width: 100%;
+    height: 4rem;
+    background-color: #fff;
+    border: solid .1rem #000;
+    border-radius: 3rem;
+    font-weight: 700;
+    color: #000;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    animation-name: breathing;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    -webkit-animation-name: breathing;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes breathing {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes breathing {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.project-img-btn:hover {
+    animation: 0;
+    transform: scale(1.1);
+}
+
+.project-img-btn:focus {
+    outline: 0;
+}
+
+.highlight {
+    background-image: linear-gradient(to right, transparent 50%, transparent 50%);
+    background-size: 200%;
+    background-position: 0 0;
+    transition: 0.5s ease-in-out;
+}
+
+.highlight-active {
+    background-position: -100% 0;
+}
+
+.highlight-foodex {
+    background-image: linear-gradient(to right, transparent 50%, rgba(252, 87, 89, 0.3) 50%);
+}
+
+.highlight-fittingeasy {
+    background-image: linear-gradient(to right, transparent 50%, rgba(71, 159, 241, 0.3) 50%);
+}
+
 
 
