@@ -1,30 +1,27 @@
 import "../css/index.css";
 import "../css/App.css";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 
 export default function TextHighlightComponent(props) {
-    const test = useRef(null);
+    const highlightTextRef = useRef(null);
+    const [inPosition, setActive] = useState(false);
 
     useEffect(() => {
-        const highlightText = Array.from(test);
 
         function highlight() {
 
-            let scroll = window.scrollTop;
-            let height = window.height;
+            let scroll = window.pageYOffset;
+            let height = window.outerHeight;
 
-            highlightText.forEach((element) => {
-                // let pos = element.offset().top;
-                // let bounds = pos + element.outerHeight();
+            let pos = highlightTextRef.current.offsetTop;
+            let bounds = pos + highlightTextRef.current.offsetHeight;
 
-                // console.log(element);
-                // if (scroll + height >= bounds) {
-                //     highlightText.className = "highlight highlight-active";
-                // }
-                // else {
-                //     highlightText.className = "highlight";
-                // }
-            });
+            if (scroll + height >= bounds) {
+                setActive(true);
+            }
+            else {
+                setActive(false);
+            }
 
         }
 
@@ -36,7 +33,7 @@ export default function TextHighlightComponent(props) {
     }, []);
 
     return (
-        <span className="highlight" ref={test} style={{backgroundImage: props.color}}>
+        <span className={"highlight " + (inPosition ? "highlight-active" : "")} ref={highlightTextRef} style={{backgroundImage: props.color}}>
             {props.text}
         </span>
     );

@@ -81,18 +81,23 @@ a:hover {
     padding-bottom: 6.4rem;
 }
 
-.section-space {
-    margin-top: 11.2rem;
-}
-
 .title-space {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
 }
 
-.section-title-space {
+.subsection-space {
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
+}
+
+.subsection-title-space {
     margin-bottom: 2.4rem;
 }
 
+.pic-space {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
 
 

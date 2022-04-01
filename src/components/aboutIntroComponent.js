@@ -46,7 +46,7 @@ export default function AboutIntroComponent() {
                         <p className="text-align">I'm a lover - I am proud of who I am and I believe in myself.</p>
                     </Col>
                 </Row>
-                <Row className="section-space">
+                <Row style={{marginTop: "11.2rem"}}>
                     <Col>
                         <p className="bold-text">I used to dream of flying in the sky. I still do...</p>
                     </Col>
