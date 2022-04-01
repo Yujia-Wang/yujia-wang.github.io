@@ -1,12 +1,12 @@
 import {Col, Row} from "react-bootstrap";
 
 
-export default function SubsectionComponent(props, {children}) {
+export default function SubsectionComponent(props) {
     return (
         <Row className="subsection-space">
             <Col>
                 <h4 className="subsection-title-space">{props.subtitle}</h4>
-                {children}
+                {props.children}
             </Col>
         </Row>
     );

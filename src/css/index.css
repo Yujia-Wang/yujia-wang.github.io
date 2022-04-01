@@ -78,7 +78,6 @@ a:hover {
 .project-content {
     padding-left: 8.4rem;
     padding-right: 8.4rem;
-    padding-bottom: 6.4rem;
 }
 
 .title-space {
@@ -87,17 +86,27 @@ a:hover {
 }
 
 .subsection-space {
-    margin-top: 5.6rem;
-    margin-bottom: 5.6rem;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
 }
 
 .subsection-title-space {
-    margin-bottom: 2.4rem;
+    padding-bottom: 2.4rem;
 }
 
 .pic-space {
     margin-top: 1.6rem;
-    margin-bottom: 1.6rem;
+}
+
+.pic-style {
+    box-shadow: 0 5px 20px 0 #d8d8d8;
+    border-radius: 1.2rem;
+}
+
+.section-divider {
+    margin: 5.6rem 8.4rem;
+    height: 0.2rem;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #000000 50%, rgba(0, 0, 0, 0));
 }
 
 

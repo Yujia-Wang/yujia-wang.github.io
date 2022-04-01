@@ -4,7 +4,12 @@ import {useEffect, useRef, useState} from "react";
 
 export default function TextHighlightComponent(props) {
     const highlightTextRef = useRef(null);
+    const [highlightColor, setColor] = useState(null);
     const [inPosition, setActive] = useState(false);
+
+    if (props.color = "vstyle" ) {
+        setColor("linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.1) 50%)");
+    }
 
     useEffect(() => {
 
@@ -33,7 +38,11 @@ export default function TextHighlightComponent(props) {
     }, []);
 
     return (
-        <span className={"highlight " + (inPosition ? "highlight-active" : "")} ref={highlightTextRef} style={{backgroundImage: props.color}}>
+        <span
+            className={"highlight " + (inPosition ? "highlight-active" : "")}
+            ref={highlightTextRef}
+            style={{backgroundImage: highlightColor}}
+        >
             {props.text}
         </span>
     );
