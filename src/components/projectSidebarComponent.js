@@ -22,7 +22,7 @@ export default function ProjectSidebarComponent(props) {
                 {props.navItem.map(({url, name}) => (
                     <Row className="nav-space nav-text">
                         <Col className="center">
-                            <Link to={url}>{name}</Link>
+                            <a href={url}>{name}</a>
                         </Col>
                     </Row>
                 ))}

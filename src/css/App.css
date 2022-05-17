@@ -312,5 +312,22 @@
     background-image: linear-gradient(to right, transparent 50%, rgba(71, 159, 241, 0.3) 50%);
 }
 
+.pros-cons-title {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+}
+
+.pros-cons-list {
+    list-style-type: none;
+    margin: 0.8rem 0 0 3.2rem;
+    padding: 0;
+}
+
+.pros-cons-list li {
+    padding: 0.8rem 0;
+}
+
 
 

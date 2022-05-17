@@ -1,6 +1,5 @@
- import {Container, Row, Col} from "react-bootstrap";
+import {Row, Col} from "react-bootstrap";
 import React from "react";
- import {Link} from "react-router-dom";
 
 export default function ProjectInfoComponent(props) {
     return (
@@ -28,7 +27,7 @@ export default function ProjectInfoComponent(props) {
             </Col>
             <Col md={10}>
                 {props.myRole.map((content) => (
-                    <p className="text-align">
+                    <p>
                         {content}
                     </p>
                 ))}

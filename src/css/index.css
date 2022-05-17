@@ -39,6 +39,11 @@ p {
     line-height: 1.8em;
     padding: 0.8rem 0;
     margin: 0;
+    text-align: justify;
+}
+
+ul {
+    padding-left: 1.7rem;
 }
 
 a {
@@ -53,6 +58,10 @@ a:hover {
     text-decoration: none;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .row {
     --bs-gutter-x: 2.4rem;
 }
@@ -60,14 +69,12 @@ a:hover {
 .copyright {
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
 }
 
 .center {
     text-align: center;
-}
-
-.text-align {
-    text-align: justify;
 }
 
 .content-wrapper {
@@ -81,13 +88,13 @@ a:hover {
 }
 
 .title-space {
-    padding-top: 5.6rem;
-    padding-bottom: 5.6rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 }
 
 .subsection-space {
-    padding-top: 5.6rem;
-    padding-bottom: 5.6rem;
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
 }
 
 .subsection-title-space {
@@ -104,9 +111,47 @@ a:hover {
 }
 
 .section-divider {
-    margin: 5.6rem 8.4rem;
+    margin-top: 5.6rem;
+    margin-left: 8.4rem;
+    margin-right: 8.4rem;
     height: 0.2rem;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #000000 50%, rgba(0, 0, 0, 0));
+}
+
+.stack-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+}
+
+.problem-block {
+    background-color: #f2f2f2;
+    padding: 4.8rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.problem-text1 {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.problem-text2 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+	letter-spacing: .048rem;
+	word-spacing: normal;
+    line-height: 3.6rem;
+    color: #313843;
+    text-align: center;
+}
+
+.video-feature {
+    width: 100%;
+    border-radius: 0.4rem;
+    box-shadow: 0 5px 20px 0 #d8d8d8;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
 }
 
 

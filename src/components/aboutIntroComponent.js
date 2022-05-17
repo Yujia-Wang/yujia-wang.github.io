@@ -35,15 +35,15 @@ export default function AboutIntroComponent() {
                 </Row>
                 <Row>
                     <Col>
-                        <p className="text-align">My name is Yujia (Bobo) Wang. Currently I'm
+                        <p>My name is Yujia (Bobo) Wang. Currently I'm
                             a UX/UI designer in DrChrono.</p>
-                        <p className="text-align">I'm a designer - I care about every user and I strive to bring
+                        <p>I'm a designer - I care about every user and I strive to bring
                             enjoyable experiences into people's lives.</p>
-                        <p className="text-align">I'm a developer - I make ideas become a reality.</p>
-                        <p className="text-align">I'm a student - I am always striving to learn more and grow
+                        <p>I'm a developer - I make ideas become a reality.</p>
+                        <p>I'm a student - I am always striving to learn more and grow
                             myself.</p>
-                        <p className="text-align">I'm a dream chaser - I never give up and I welcome challenges.</p>
-                        <p className="text-align">I'm a lover - I am proud of who I am and I believe in myself.</p>
+                        <p>I'm a dream chaser - I never give up and I welcome challenges.</p>
+                        <p>I'm a lover - I am proud of who I am and I believe in myself.</p>
                     </Col>
                 </Row>
                 <Row style={{marginTop: "11.2rem"}}>

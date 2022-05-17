@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ProjectSectionComponent(props) {
     return (
-        <Container className="project-content">
+        <Container className="project-content" id={props.id}>
             <Row>
                 <Col md={{span: 4, offset: 4}} className="center title-space">
                     <h1>{props.title}</h1>

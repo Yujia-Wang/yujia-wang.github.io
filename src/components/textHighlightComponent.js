@@ -4,11 +4,12 @@ import {useEffect, useRef, useState} from "react";
 
 export default function TextHighlightComponent(props) {
     const highlightTextRef = useRef(null);
-    const [highlightColor, setColor] = useState(null);
+    let color = props.color;
+    let highlightColor = null;
     const [inPosition, setActive] = useState(false);
 
-    if (props.color = "vstyle" ) {
-        setColor("linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.1) 50%)");
+    if (color == "vstyle" ) {
+        highlightColor = "linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.1) 50%)";
     }
 
     useEffect(() => {
