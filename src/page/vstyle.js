@@ -11,6 +11,7 @@ import TextHighlightComponent from "../components/textHighlightComponent";
 import DividerComponent from "../components/dividerComponent";
 import ProsConsComponent from "../components/prosConsComponent";
 import ProblemBlockComponent from "../components/problemBlockComponent";
+import VstyleFunFilterComponent from "../components/vstyleFunFilterComponent";
 import vstyle from "../image/vstyle/vstyle-pic.png";
 import vstyleSolution from "../image/vstyle/solution.png";
 import vstyleProcess from "../image/vstyle/process.svg";
@@ -39,6 +40,30 @@ import vstyleCombo1 from "../image/vstyle/combo1.mp4";
 import vstyleCombo2 from "../image/vstyle/combo2.mp4";
 import vstyleCombo3 from "../image/vstyle/combo3.mp4";
 import vstyleCombo4 from "../image/vstyle/combo4.mp4";
+
+import maleIcon from "../image/vstyle/male.svg";
+import femaleIcon from "../image/vstyle/female.svg";
+import tankTopIcon from "../image/vstyle/tanktop.svg";
+import tShirtIcon from "../image/vstyle/tshirt.svg";
+import shirtIcon from "../image/vstyle/shirt.svg";
+import sweaterIcon from "../image/vstyle/sweater.svg";
+import suitIcon from "../image/vstyle/suit.svg";
+import outwearIcon from "../image/vstyle/outerwear.svg";
+import dressIcon from "../image/vstyle/dress.svg";
+import solidIcon from "../image/vstyle/solid.svg";
+import graphicIcon from "../image/vstyle/graphics.svg";
+import floralIcon from "../image/vstyle/floral.svg";
+import plaidIcon from "../image/vstyle/plaid.svg";
+import spottedIcon from "../image/vstyle/spotted.svg";
+import stripedIcon from "../image/vstyle/striped.svg";
+import foldedIcon from "../image/vstyle/folded.svg";
+import roundIcon from "../image/vstyle/round.svg";
+import vshapeIcon from "../image/vstyle/vshape.svg";
+import hatIcon from "../image/vstyle/hat.svg";
+import glassesIcon from "../image/vstyle/glasses.svg";
+import scarfIcon from "../image/vstyle/scarf.svg";
+import tieIcon from "../image/vstyle/necktie.svg";
+
 
 function Vstyle() {
   return (
@@ -591,7 +616,84 @@ function Vstyle() {
               </ProjectSectionComponent>
               <DividerComponent />
               <ProjectSectionComponent title="FUN !" id="fun">
+                  <Row>
+                      <Col md={5} style={{paddingRight: "4.8rem"}}>
+                          {/*<VstyleFunFilterComponent*/}
+                          {/*    filterName="Gender"*/}
+                          {/*    align="right"*/}
+                          {/*    filters={[*/}
+                          {/*        {type: "icon", src: maleIcon},*/}
+                          {/*        {type: "icon", src: femaleIcon},*/}
+                          {/*    ]}*/}
+                          {/*/>*/}
+                          <VstyleFunFilterComponent
+                              filterName="Skin Color"
+                              align="right"
+                              filters={[
+                                  {type: "fill", src: "none", color: "#ddbe9a"},
+                                  {type: "fill", src: "none", color: "#d3ab84"},
+                              ]}
+                          />
+                      {/*    <VstyleFunFilterComponent*/}
+                      {/*        filterName="Clothing Category"*/}
+                      {/*        align="right"*/}
+                      {/*        filters={[*/}
+                      {/*            {type: "icon", src: tankTopIcon},*/}
+                      {/*            {type: "icon", src: tShirtIcon},*/}
+                      {/*            {type: "icon", src: shirtIcon},*/}
+                      {/*            {type: "icon", src: sweaterIcon},*/}
+                      {/*            {type: "icon", src: suitIcon},*/}
+                      {/*            {type: "icon", src: outwearIcon},*/}
+                      {/*            {type: "icon", src: dressIcon},*/}
+                      {/*        ]}*/}
+                      {/*    />*/}
+                      {/*    <VstyleFunFilterComponent*/}
+                      {/*        filterName="Clothing Pattern"*/}
+                      {/*        align="right"*/}
+                      {/*        filters={[*/}
+                      {/*            {type: "icon", src: solidIcon},*/}
+                      {/*            {type: "icon", src: graphicIcon},*/}
+                      {/*            {type: "icon", src: floralIcon},*/}
+                      {/*            {type: "icon", src: plaidIcon},*/}
+                      {/*            {type: "icon", src: spottedIcon},*/}
+                      {/*            {type: "icon", src: stripedIcon},*/}
+                      {/*        ]}*/}
+                      {/*    />*/}
+                      </Col>
+                      <Col md={2}>
 
+                      </Col>
+                      {/*<Col md={5} style={{paddingLeft: "4.8rem"}}>*/}
+                      {/*    <VstyleFunFilterComponent*/}
+                      {/*        filterName="Neckline Shape"*/}
+                      {/*        align="left"*/}
+                      {/*        filters={[*/}
+                      {/*            {type: "icon", src: foldedIcon},*/}
+                      {/*            {type: "icon", src: roundIcon},*/}
+                      {/*            {type: "icon", src: vshapeIcon},*/}
+                      {/*        ]}*/}
+                      {/*    />*/}
+                      {/*    <VstyleFunFilterComponent*/}
+                      {/*        filterName="Accessory"*/}
+                      {/*        align="left"*/}
+                      {/*        filters={[*/}
+                      {/*            {type: "icon", src: hatIcon},*/}
+                      {/*            {type: "icon", src: glassesIcon},*/}
+                      {/*            {type: "icon", src: scarfIcon},*/}
+                      {/*            {type: "icon", src: tieIcon},*/}
+                      {/*        ]}*/}
+                      {/*    />*/}
+                      {/*    <VstyleFunFilterComponent*/}
+                      {/*        filterName="Clothing Color"*/}
+                      {/*        align="left"*/}
+                      {/*        filters={[*/}
+                      {/*            {type: "icon", src: maleIcon},*/}
+                      {/*            {type: "icon", src: femaleIcon},*/}
+                      {/*            {type: "icon", src: femaleIcon},*/}
+                      {/*        ]}*/}
+                      {/*    />*/}
+                      {/*</Col>*/}
+                  </Row>
               </ProjectSectionComponent>
               <FooterComponent />
           </div>
