@@ -9,7 +9,9 @@ export default function ProjectSectionComponent(props) {
                     <h1>{props.title}</h1>
                 </Col>
             </Row>
-            {props.children}
+            <div style={{display:"flex", flexDirection: "column", gap:"12rem"}}>
+                {props.children}
+            </div>
         </Container>
     );
 }

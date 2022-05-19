@@ -4,7 +4,6 @@
     border-radius: 2rem;
     border: solid 0.2rem #fff;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
-    /*background-color: #fff;*/
     display: inline-block;
     position: relative;
 }
@@ -14,4 +13,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.filter-active {
+    border: solid 2px #313843;
 }

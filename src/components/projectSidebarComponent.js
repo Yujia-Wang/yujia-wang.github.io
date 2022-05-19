@@ -19,8 +19,8 @@ export default function ProjectSidebarComponent(props) {
                         </Link>
                     </Col>
                 </Row>
-                {props.navItem.map(({url, name}) => (
-                    <Row className="nav-space nav-text">
+                {props.navItem.map(({url, name}, index) => (
+                    <Row className="nav-space nav-text" key={index}>
                         <Col className="center">
                             <a href={url}>{name}</a>
                         </Col>

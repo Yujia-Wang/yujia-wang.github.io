@@ -26,8 +26,8 @@ export default function ProjectInfoComponent(props) {
                 <p>My Role</p>
             </Col>
             <Col md={10}>
-                {props.myRole.map((content) => (
-                    <p>
+                {props.myRole.map((content, index) => (
+                    <p key={index}>
                         {content}
                     </p>
                 ))}

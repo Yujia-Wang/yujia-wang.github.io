@@ -11,7 +11,7 @@ import TextHighlightComponent from "../components/textHighlightComponent";
 import DividerComponent from "../components/dividerComponent";
 import ProsConsComponent from "../components/prosConsComponent";
 import ProblemBlockComponent from "../components/problemBlockComponent";
-import VstyleFunFilterComponent from "../components/vstyleFunFilterComponent";
+import VstyleFunComponent from "../components/vstyleFunComponent";
 import vstyle from "../image/vstyle/vstyle-pic.png";
 import vstyleSolution from "../image/vstyle/solution.png";
 import vstyleProcess from "../image/vstyle/process.svg";
@@ -611,89 +611,14 @@ function Vstyle() {
               </ProjectSectionComponent>
               <DividerComponent />
               <ProjectSectionComponent title="REFLECTION" id="reflection">
-                  <p>This project is one of my favorite projects. I’m so proud of what we have accomplished. Information visualization was a new territory for us. An innovate way to present data means more efforts for users to learn. However, an appropriate visualization can help users discover in-depth findings, which is something that simple bar charts cannot achieve. To design an appropriate visualization, we have to be user-driven, focusing on their goals.</p>
-                  <p>During the design phase, we have encountered so many tough challenges that we have to make a choice. Some of them are choices between achievable functions and visual effects, and some are choices among different ways to present data. There’s always a trade-off. What we can do is to balance these trade-offs and think about one question: are you just trying to make it visually amazing? or really trying to design for your users?</p>
+                  <div>
+                      <p>This project is one of my favorite projects. I’m so proud of what we have accomplished. Information visualization was a new territory for us. An innovate way to present data means more efforts for users to learn. However, an appropriate visualization can help users discover in-depth findings, which is something that simple bar charts cannot achieve. To design an appropriate visualization, we have to be user-driven, focusing on their goals.</p>
+                      <p>During the design phase, we have encountered so many tough challenges that we have to make a choice. Some of them are choices between achievable functions and visual effects, and some are choices among different ways to present data. There’s always a trade-off. What we can do is to balance these trade-offs and think about one question: are you just trying to make it visually amazing? or really trying to design for your users?</p>
+                  </div>
               </ProjectSectionComponent>
               <DividerComponent />
               <ProjectSectionComponent title="FUN !" id="fun">
-                  <Row>
-                      <Col md={5} style={{paddingRight: "4.8rem"}}>
-                          {/*<VstyleFunFilterComponent*/}
-                          {/*    filterName="Gender"*/}
-                          {/*    align="right"*/}
-                          {/*    filters={[*/}
-                          {/*        {type: "icon", src: maleIcon},*/}
-                          {/*        {type: "icon", src: femaleIcon},*/}
-                          {/*    ]}*/}
-                          {/*/>*/}
-                          <VstyleFunFilterComponent
-                              filterName="Skin Color"
-                              align="right"
-                              filters={[
-                                  {type: "fill", src: "none", color: "#ddbe9a"},
-                                  {type: "fill", src: "none", color: "#d3ab84"},
-                              ]}
-                          />
-                      {/*    <VstyleFunFilterComponent*/}
-                      {/*        filterName="Clothing Category"*/}
-                      {/*        align="right"*/}
-                      {/*        filters={[*/}
-                      {/*            {type: "icon", src: tankTopIcon},*/}
-                      {/*            {type: "icon", src: tShirtIcon},*/}
-                      {/*            {type: "icon", src: shirtIcon},*/}
-                      {/*            {type: "icon", src: sweaterIcon},*/}
-                      {/*            {type: "icon", src: suitIcon},*/}
-                      {/*            {type: "icon", src: outwearIcon},*/}
-                      {/*            {type: "icon", src: dressIcon},*/}
-                      {/*        ]}*/}
-                      {/*    />*/}
-                      {/*    <VstyleFunFilterComponent*/}
-                      {/*        filterName="Clothing Pattern"*/}
-                      {/*        align="right"*/}
-                      {/*        filters={[*/}
-                      {/*            {type: "icon", src: solidIcon},*/}
-                      {/*            {type: "icon", src: graphicIcon},*/}
-                      {/*            {type: "icon", src: floralIcon},*/}
-                      {/*            {type: "icon", src: plaidIcon},*/}
-                      {/*            {type: "icon", src: spottedIcon},*/}
-                      {/*            {type: "icon", src: stripedIcon},*/}
-                      {/*        ]}*/}
-                      {/*    />*/}
-                      </Col>
-                      <Col md={2}>
-
-                      </Col>
-                      {/*<Col md={5} style={{paddingLeft: "4.8rem"}}>*/}
-                      {/*    <VstyleFunFilterComponent*/}
-                      {/*        filterName="Neckline Shape"*/}
-                      {/*        align="left"*/}
-                      {/*        filters={[*/}
-                      {/*            {type: "icon", src: foldedIcon},*/}
-                      {/*            {type: "icon", src: roundIcon},*/}
-                      {/*            {type: "icon", src: vshapeIcon},*/}
-                      {/*        ]}*/}
-                      {/*    />*/}
-                      {/*    <VstyleFunFilterComponent*/}
-                      {/*        filterName="Accessory"*/}
-                      {/*        align="left"*/}
-                      {/*        filters={[*/}
-                      {/*            {type: "icon", src: hatIcon},*/}
-                      {/*            {type: "icon", src: glassesIcon},*/}
-                      {/*            {type: "icon", src: scarfIcon},*/}
-                      {/*            {type: "icon", src: tieIcon},*/}
-                      {/*        ]}*/}
-                      {/*    />*/}
-                      {/*    <VstyleFunFilterComponent*/}
-                      {/*        filterName="Clothing Color"*/}
-                      {/*        align="left"*/}
-                      {/*        filters={[*/}
-                      {/*            {type: "icon", src: maleIcon},*/}
-                      {/*            {type: "icon", src: femaleIcon},*/}
-                      {/*            {type: "icon", src: femaleIcon},*/}
-                      {/*        ]}*/}
-                      {/*    />*/}
-                      {/*</Col>*/}
-                  </Row>
+                  <VstyleFunComponent />
               </ProjectSectionComponent>
               <FooterComponent />
           </div>

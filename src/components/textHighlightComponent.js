@@ -8,7 +8,7 @@ export default function TextHighlightComponent(props) {
     let highlightColor = null;
     const [inPosition, setActive] = useState(false);
 
-    if (color == "vstyle" ) {
+    if (color === "vstyle" ) {
         highlightColor = "linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.1) 50%)";
     }
 

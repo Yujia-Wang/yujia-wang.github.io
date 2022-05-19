@@ -16,8 +16,8 @@ export default function ProsConsComponent(props) {
                     <p style={{color: "#fc5759"}}>Likes</p>
                 </div>
                 <ul className="pros-cons-list">
-                    {props.pros.map((content) => (
-                        <li>
+                    {props.pros.map((content, index) => (
+                        <li key={index}>
                             {content}
                         </li>
                     ))}
@@ -29,8 +29,8 @@ export default function ProsConsComponent(props) {
                     <p style={{color: "#fc5759"}}>Dislikes</p>
                 </div>
                 <ul className="pros-cons-list">
-                    {props.cons.map((content) => (
-                        <li>
+                    {props.cons.map((content, index) => (
+                        <li key={index}>
                             {content}
                         </li>
                     ))}

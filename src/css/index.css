@@ -85,16 +85,12 @@ a:hover {
 .project-content {
     padding-left: 8.4rem;
     padding-right: 8.4rem;
+    padding-bottom: 12rem;
 }
 
 .title-space {
     padding-top: 12rem;
     padding-bottom: 12rem;
-}
-
-.subsection-space {
-    padding-top: 6.4rem;
-    padding-bottom: 6.4rem;
 }
 
 .subsection-title-space {
@@ -111,7 +107,6 @@ a:hover {
 }
 
 .section-divider {
-    margin-top: 5.6rem;
     margin-left: 8.4rem;
     margin-right: 8.4rem;
     height: 0.2rem;
