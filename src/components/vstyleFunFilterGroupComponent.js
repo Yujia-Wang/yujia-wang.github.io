@@ -1,11 +1,9 @@
 import {Col, Row} from "react-bootstrap";
 import "../css/vstyle.css";
-import React, {useState, useEffect} from "react";
+import React from "react";
 import VstyleFunFilterComponent from "./vstyleFunFilterComponent";
 
 export default function VstyleFunFilterGroupComponent(props) {
-    const [accessoryState, setAccessoryState] = useState([false, false, false, false]);
-    const [i,setI] = useState(false);
 
     let position = {
         justifyContent: "",
@@ -20,10 +18,8 @@ export default function VstyleFunFilterGroupComponent(props) {
         position.textAlign = "left";
     }
 
-
-
     const onAccessoryChange = (index) => {
-        const temp = props.activeFilter;
+        const temp = [...props.activeFilter];
         temp[index] = !temp[index];
         props.setActiveFilter(temp);
     }
