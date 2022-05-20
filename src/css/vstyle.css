@@ -1,3 +1,4 @@
+/*main body*/
 .malehead-cls-1{fill:#d3ab84;}
 .malehead-cls-2{fill:#dbb99a;}
 .malehead-cls-3{fill:#231f20;}
@@ -24,6 +25,88 @@
 .femaledownbody-cls-5{fill:#212222;}
 .femaledownbody-cls-6{fill:#1d1d1d;}
 .femaledownbody-cls-7{fill:#343436;}
+
+/*clothing category*/
+.tanktop-cls-1{fill:#52c3f0;}
+.tanktop-cls-2{fill:#00aeef;}
+
+.tshirt-cls-1{fill:#f7be79;}
+.tshirt-cls-2{fill:#f7941d;}
+
+.shirt-cls-1{fill:#c2b59b;}
+.shirt-cls-2{fill:#a09580;}
+.shirt-cls-3{fill:#231f20;}
+
+.sweater-cls-1{fill:#fbb040;}
+.sweater-cls-2{fill:#b07b2d;}
+.sweater-cls-3{fill:#8656a3;}
+.sweater-cls-4{fill:#262262;}
+
+.suit-cls-1{fill:#fff;}
+.suit-cls-2{fill:#231f20;}
+.suit-cls-3{fill:#414042;}
+.suit-cls-4{fill:#554b4d;}
+
+.outerwear-cls-1{fill:#fff;}
+.outerwear-cls-2{fill:#231f20;}
+.outerwear-cls-3{fill:#504749;}
+.outerwear-cls-4{fill:#435a85;}
+.outerwear-cls-5{fill:#d1d3d4;}
+.outerwear-cls-6{fill:#414042;}
+
+.dress-cls-1{fill:#fff;}
+.dress-cls-2{fill:#99262a;}
+.dress-cls-3{fill:#6c1b1e;}
+.dress-cls-4{fill:#ddbe9a;}
+.dress-cls-5{fill:#e6ceb4;}
+
+/*neckline shape*/
+.folded-cls-1{fill:#58595b;}
+.folded-cls-2{fill:#414042;}
+
+.vshape-cls-1{fill:#58595b;}
+.vshape-cls-2{fill:#d3ab84;}
+.vshape-cls-3{fill:#dbba9b;}
+
+.round-cls-1{fill:#6d6e71;}
+.round-cls-2{fill:#d3ab84;}
+.round-cls-3{fill:#dbb99a;}
+
+/*scarf, hat, glasses, necktie*/
+.scarf-cls-1{fill:#27aae1;stroke:#27aae1;}
+.scarf-cls-1,.scarf-cls-2{stroke-miterlimit:10;}
+.scarf-cls-2{fill:#1b75bc;stroke:#1b75bc;}
+
+.malehat-cls-1{fill:#181823;}
+.malehat-cls-2{fill:#a7a9ac;}
+
+.femalehat-cls-1{fill:#d77d35;}
+.femalehat-cls-2{fill:#fbb378;}
+.femalehat-cls-3{fill:#bee3d8;}
+.femalehat-cls-4{fill:#f15d5c;}
+.femalehat-cls-5{fill:#48b896;}
+
+.maleglasses-cls-1{fill:#e6e7e8;}
+.maleglasses-cls-2{fill:#323232;}
+
+.femaleglasses-cls-1{fill:#414042;}
+.femaleglasses-cls-2{fill:#323232;}
+
+.necktie-cls-1{fill:#231f20;}
+.necktie-cls-2{fill:#353433;}
+
+/*clothing pattern*/
+.floral-cls-1{fill:rgba(241, 242, 242, 0.9);}
+
+.spotted-cls-1{fill:rgba(241, 242, 242, 0.8);}
+
+.graphics-cls-1{fill:none;}
+.graphics-cls-1,.graphics-cls-2{stroke:rgba(241, 242, 242, 0.9);stroke-linecap:round;stroke-linejoin:round;}
+
+.striped-cls-1{fill:rgba(241, 242, 242, 0.8);}
+
+.plaid-cls-1{fill:rgba(241, 242, 242, 0.3);}
+.plaid-cls-2{fill:none;}
 
 .filter-container {
     width: 4rem;
@@ -71,6 +154,118 @@
 .downbody-position {
     position: absolute;
     top: 80.6%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.tanktop-position {
+    position: absolute;
+    top: 43.1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.tshirt-position {
+    position: absolute;
+    top: 43.1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.shirt-position {
+    position: absolute;
+    top: 43.1%;
+    left: 50%;
+    transform: translate(-50.5%, 0);
+}
+
+.sweater-position {
+    position: absolute;
+    top: 43.1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.suit-position {
+    position: absolute;
+    top: 43.1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.outerwear-position {
+    position: absolute;
+    top: 40.3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.dress-position {
+    position: absolute;
+    top: 43.1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.folded-position {
+    position: absolute;
+    top: 39.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.vshape-position {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.round-position {
+    position: absolute;
+    top: 41.7%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.scarf-position {
+    position: absolute;
+    top: 39.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.malehat-position {
+    position: absolute;
+    top: -4.3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.femalehat-position {
+    position: absolute;
+    top: -1.7%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.maleglasses-position {
+    position: absolute;
+    top: 17.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.femaleglasses-position {
+    position: absolute;
+    top: 22.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.necktie-position {
+    position: absolute;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, 0);
 }
