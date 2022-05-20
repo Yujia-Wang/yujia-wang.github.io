@@ -4,7 +4,8 @@ import React, {useState, useEffect} from "react";
 import VstyleFunFilterComponent from "./vstyleFunFilterComponent";
 
 export default function VstyleFunFilterGroupComponent(props) {
-    const [currentActiveFilter, setCurrentFilterActive] = useState(0);
+    const [accessoryState, setAccessoryState] = useState([false, false, false, false]);
+    const [i,setI] = useState(false);
 
     let position = {
         justifyContent: "",
@@ -19,18 +20,25 @@ export default function VstyleFunFilterGroupComponent(props) {
         position.textAlign = "left";
     }
 
-    useEffect(() => {
-        if (props.activeFilter !== 0 && props.activeFilter < props.children.length) {
-            setCurrentFilterActive(props.activeFilter);
-        }
-    },[]);
+
+
+    const onAccessoryChange = (index) => {
+        const temp = props.activeFilter;
+        temp[index] = !temp[index];
+        props.setActiveFilter(temp);
+    }
+
 
     const onChangeFilter = (index) => {
-        setCurrentFilterActive(index);
+        props.setActiveFilter(index);
     }
 
     const filters = props.filters.map(({type, src, color}, index) => {
-        return <VstyleFunFilterComponent type={type} src={src} color={color} key={index} isActive={(currentActiveFilter === index)} onClick={() => onChangeFilter(index)}/>;
+        if (props.filterName === "Accessory") {
+            return <VstyleFunFilterComponent type={type} src={src} color={color} key={index} isActive={props.activeFilter[index]} onClick={() => onAccessoryChange(index)} />
+        } else {
+            return <VstyleFunFilterComponent type={type} src={src} color={color} key={index} isActive={(props.activeFilter === index)} onClick={() => onChangeFilter(index)}/>;
+        }
     })
 
     return (

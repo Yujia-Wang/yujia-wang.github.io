@@ -41,30 +41,6 @@ import vstyleCombo2 from "../image/vstyle/combo2.mp4";
 import vstyleCombo3 from "../image/vstyle/combo3.mp4";
 import vstyleCombo4 from "../image/vstyle/combo4.mp4";
 
-import maleIcon from "../image/vstyle/male.svg";
-import femaleIcon from "../image/vstyle/female.svg";
-import tankTopIcon from "../image/vstyle/tanktop.svg";
-import tShirtIcon from "../image/vstyle/tshirt.svg";
-import shirtIcon from "../image/vstyle/shirt.svg";
-import sweaterIcon from "../image/vstyle/sweater.svg";
-import suitIcon from "../image/vstyle/suit.svg";
-import outwearIcon from "../image/vstyle/outerwear.svg";
-import dressIcon from "../image/vstyle/dress.svg";
-import solidIcon from "../image/vstyle/solid.svg";
-import graphicIcon from "../image/vstyle/graphics.svg";
-import floralIcon from "../image/vstyle/floral.svg";
-import plaidIcon from "../image/vstyle/plaid.svg";
-import spottedIcon from "../image/vstyle/spotted.svg";
-import stripedIcon from "../image/vstyle/striped.svg";
-import foldedIcon from "../image/vstyle/folded.svg";
-import roundIcon from "../image/vstyle/round.svg";
-import vshapeIcon from "../image/vstyle/vshape.svg";
-import hatIcon from "../image/vstyle/hat.svg";
-import glassesIcon from "../image/vstyle/glasses.svg";
-import scarfIcon from "../image/vstyle/scarf.svg";
-import tieIcon from "../image/vstyle/necktie.svg";
-
-
 function Vstyle() {
   return (
       <div>
