@@ -17,6 +17,9 @@ export default function ProjectListComponent() {
             </div>
             <Stack direction="horizontal" className="horizontal-project">
                 <Link to="/">
+                    <ProjectWidgetComponent imgSource={fittingeasy} altText={"DrChrono Design System"} />
+                </Link>
+                <Link to="/">
                     <ProjectWidgetComponent imgSource={foodex} altText={"FoodEx"} />
                 </Link>
                 <Link to="/vstyle">
@@ -25,11 +28,10 @@ export default function ProjectListComponent() {
                 <Link to="/">
                     <ProjectWidgetComponent imgSource={fittingeasy} altText={"FittingEasy"} />
                 </Link>
-                <Link to="/">
-                    <ProjectWidgetComponent imgSource={fittingeasy} altText={"FittingEasy"} />
-                </Link>
             </Stack>
-            <FooterComponent />
+            <div style={{marginTop: "16rem"}}>
+                <FooterComponent />
+            </div>
         </Stack>
     );
 }

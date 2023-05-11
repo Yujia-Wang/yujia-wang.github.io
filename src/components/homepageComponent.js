@@ -18,7 +18,7 @@ export default function HomepageComponent() {
                         <div className="intro section">
                             <ImgCompareImgComponent/>
                             <div className="job-title center">
-                                <span>UX/UI DESIGNER & ENGINEER</span>
+                                <span>UX/UI DESIGNER & DEVELOPER</span>
                             </div>
                             <div className="next-page center">
                                 <FontAwesomeIcon icon={faAngleDoubleDown} fontSize="2.4rem"/>

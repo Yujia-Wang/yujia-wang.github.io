@@ -2,7 +2,6 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import "../css/index.css";
 import "../css/App.css";
-import FooterComponent from "./footerComponent";
 import aboutMe from "../image/about/about.svg";
 import about1 from "../image/about/about1.jpg";
 import about2 from "../image/about/about2.jpg";
@@ -36,7 +35,7 @@ export default function AboutIntroComponent() {
                 <Row>
                     <Col>
                         <p>My name is Yujia (Bobo) Wang. Currently I'm
-                            a UX/UI designer in DrChrono.</p>
+                            a UX/UI designer in EverCommerce - DrChrono.</p>
                         <p>I'm a designer - I care about every user and I strive to bring
                             enjoyable experiences into people's lives.</p>
                         <p>I'm a developer - I make ideas become a reality.</p>

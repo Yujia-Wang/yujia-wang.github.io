@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "../css/index.css";
 import "../css/App.css";
+import {Container, Row, Col} from "react-bootstrap";
 import homePageDesign from "../image/home/homepage-design.svg";
 import homePageCode from "../image/home/homepage-code.svg";
 
@@ -49,13 +50,17 @@ export default function ImgCompareImgComponent() {
     }, []);
 
     return (
-        <div className="img-comp-img-container">
-            <div className="img-comp-img">
-                <img id="homepage-design" ref={imgDesignRef} src={homePageDesign} width="100%" alt="bobo design"></img>
-            </div>
-            <div ref={imgCodeContainerRef} className="img-comp-img img-comp-overlay">
-                <img id="homepage-code" ref={imgCodeRef} src={homePageCode} width="100%" alt="bobo code"></img>
-            </div>
-        </div>
+        <Container className="img-comp-img-container">
+            <Row className="img-comp-img">
+                <Col style={{padding: "0"}}>
+                    <img id="homepage-design" ref={imgDesignRef} src={homePageDesign} width="100%" alt="bobo design"></img>
+                </Col>
+            </Row>
+            <Row ref={imgCodeContainerRef} className="img-comp-img img-comp-overlay">
+                <Col style={{padding: "0"}}>
+                    <img id="homepage-code" ref={imgCodeRef} src={homePageCode} width="100%" alt="bobo code"></img>
+                </Col>
+            </Row>
+        </Container>
     );
 }

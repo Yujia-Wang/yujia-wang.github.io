@@ -5,7 +5,7 @@ import "../css/App.css";
 export default function FooterComponent() {
     return (
        <div className="center">
-           <p className="copyright">Yujia (Bobo) Wang &copy; 2022 All Rights Reserved.</p>
+           <p className="copyright">Yujia (Bobo) Wang &copy; 2023 All Rights Reserved.</p>
        </div>
     );
 }
