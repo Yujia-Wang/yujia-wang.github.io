@@ -19,7 +19,7 @@ export default function ProjectListComponent() {
                 <Link to="/">
                     <ProjectWidgetComponent imgSource={fittingeasy} altText={"DrChrono Design System"} />
                 </Link>
-                <Link to="/">
+                <Link to="/foodex">
                     <ProjectWidgetComponent imgSource={foodex} altText={"FoodEx"} />
                 </Link>
                 <Link to="/vstyle">
