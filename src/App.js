@@ -4,6 +4,7 @@ import ScrollToTopComponent from "./components/scrollToTopComponent";
 import Home from "./page/home";
 import About from "./page/about";
 import Vstyle from "./page/vstyle";
+import FoodEx from "./page/foodex";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
                   <Route path="/" element={<Home />} />
                   <Route path="about" element={<About />} />
                   <Route path="vstyle" element={<Vstyle />} />
+                  <Route path="foodex" element={<FoodEx />} />
               </Routes>
           </ScrollToTopComponent>
       </BrowserRouter>

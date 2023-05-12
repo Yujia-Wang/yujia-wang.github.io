@@ -43,7 +43,9 @@ p {
 }
 
 ul {
-    padding-left: 1.7rem;
+    padding: 0.8rem 0 0.8rem 1.7rem;
+    margin: 0;
+    line-height: 1.8em;
 }
 
 a {

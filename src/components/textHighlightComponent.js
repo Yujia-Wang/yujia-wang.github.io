@@ -10,6 +10,8 @@ export default function TextHighlightComponent(props) {
 
     if (color === "vstyle" ) {
         highlightColor = "linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.1) 50%)";
+    } else if (color === "foodex") {
+        highlightColor = "linear-gradient(to right, transparent 50%, rgba(252, 87, 89, 0.3) 50%)";
     }
 
     useEffect(() => {

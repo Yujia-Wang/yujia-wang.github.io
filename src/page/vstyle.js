@@ -291,7 +291,10 @@ function Vstyle() {
                   </SubsectionComponent>
                   <SubsectionComponent subtitle="CHALLENGE - INFORMATION STRUCTURE">
                       <p>Our final design concept contains three major sections: human glyph, line chart, and chord chart. However, each part corresponds to a user goal. It was not clear to us how we should decide their priorities.</p>
-                      <ProblemBlockComponent text="How we can balance the priorities of different sections?" />
+                      <ProblemBlockComponent
+                          title="So..."
+                          text="How we can balance the priorities of different sections?"
+                      />
                       <p>
                           One core principle of information visualization we learned is&nbsp;
                           <TextHighlightComponent
@@ -360,7 +363,10 @@ function Vstyle() {
                           />
                           &nbsp;This ineffectiveness of the chord chart was not an issue we were expecting.
                       </p>
-                      <ProblemBlockComponent text="Is there any other replacement for chord chart to represent the percentage of clothing combinations?" />
+                      <ProblemBlockComponent
+                          title="So..."
+                          text="Is there any other replacement for chord chart to represent the percentage of clothing combinations?"
+                      />
                       <p>
                           After conducting some research, we found that&nbsp;
                           <TextHighlightComponent
