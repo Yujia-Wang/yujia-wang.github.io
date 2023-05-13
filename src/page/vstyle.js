@@ -102,7 +102,7 @@ function Vstyle() {
                   </SubsectionComponent>
                   <SubsectionComponent subtitle="TARGET AUDIENCE">
                       <p>Before going to the design phase, we felt it necessary to identify target users for V.style, as to create a more targeted design with helpful attributes. The target users we identified are the following:</p>
-                      <Row style={{marginBottom: "1.6rem"}}>
+                      <Row>
                           <Col md={6}>
                              <img src={vstyleAudience1} className="pic-space pic-style" width="100%" alt="audience 1" />
                           </Col>
@@ -167,12 +167,12 @@ function Vstyle() {
                               color="vstyle"
                           />
                       </p>
-                      <Row className="pic-space" style={{marginBottom: "1.6rem"}}>
+                      <Row>
                           <Col md={6}>
-                              <img src={vstyleBrainstorming1} className="pic-style" width="100%" alt="brainstorming" />
+                              <img src={vstyleBrainstorming1} className="pic-space pic-style" width="100%" alt="brainstorming" />
                           </Col>
                           <Col md={6}>
-                              <img src={vstyleBrainstorming2} className="pic-style" width="100%" height="100%" alt="brainstorming sketch" />
+                              <img src={vstyleBrainstorming2} className="pic-space pic-style" width="100%" height="100%" alt="brainstorming sketch" />
                           </Col>
                       </Row>
                       <p>After considering their feasibility and discarding some of them, we narrowed it down to four ideas. We then made a medium-fidelity design for each idea and delivered them to users for feedback.</p>
@@ -293,7 +293,9 @@ function Vstyle() {
                       <p>Our final design concept contains three major sections: human glyph, line chart, and chord chart. However, each part corresponds to a user goal. It was not clear to us how we should decide their priorities.</p>
                       <ProblemBlockComponent
                           title="So..."
-                          text="How we can balance the priorities of different sections?"
+                          text={[
+                              "How we can balance the priorities of different sections?"
+                          ]}
                       />
                       <p>
                           One core principle of information visualization we learned is&nbsp;
@@ -327,7 +329,7 @@ function Vstyle() {
                           />
                           &nbsp;As we were aware of various pros and cons, we were faced with a difficult decision.
                       </p>
-                      <Row style={{marginBottom: "1.6rem"}}>
+                      <Row>
                           <Col md={6}>
                              <img src={vstyleHorizontalLayout} className="pic-space pic-style" width="100%" alt="horizontal layout" />
                           </Col>
@@ -365,7 +367,9 @@ function Vstyle() {
                       </p>
                       <ProblemBlockComponent
                           title="So..."
-                          text="Is there any other replacement for chord chart to represent the percentage of clothing combinations?"
+                          text={[
+                              "Is there any other replacement for chord chart to represent the percentage of clothing combinations?"
+                          ]}
                       />
                       <p>
                           After conducting some research, we found that&nbsp;
