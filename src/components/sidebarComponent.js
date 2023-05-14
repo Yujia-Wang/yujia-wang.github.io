@@ -3,7 +3,8 @@ import {Container, Row, Col} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../css/index.css";
 import "../css/App.css";
-import logo from "../image/home/logo.svg";
+import logo from "../resource/home/logo.svg";
+import resume from "../resource/resume/yujia-wang-resume.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/pro-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -32,7 +33,7 @@ export default function SidebarComponent() {
                 </Row>
                 <Row className="nav-space nav-text">
                     <Col className="center">
-                        <a href="index.html" target="_blank">RESUME</a>
+                        <a href={resume} target="_blank">RESUME</a>
                     </Col>
                 </Row>
                 <Row className="contact">

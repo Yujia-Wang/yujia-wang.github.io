@@ -2,19 +2,19 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import "../css/index.css";
 import "../css/App.css";
-import aboutMe from "../image/about/about.svg";
-import about1 from "../image/about/about1.jpg";
-import about2 from "../image/about/about2.jpg";
-import about3 from "../image/about/about3.jpg";
-import about4 from "../image/about/about4.jpg";
-import about5 from "../image/about/about5.jpg";
-import about6 from "../image/about/about6.jpg";
-import about7 from "../image/about/about7.jpg";
-import about8 from "../image/about/about8.jpg";
-import about9 from "../image/about/about9.jpg";
-import about10 from "../image/about/about10.jpg";
-import about11 from "../image/about/about11.jpg";
-import about12 from "../image/about/about12.jpg";
+import aboutMe from "../resource/about/about.svg";
+import about1 from "../resource/about/about1.jpg";
+import about2 from "../resource/about/about2.jpg";
+import about3 from "../resource/about/about3.jpg";
+import about4 from "../resource/about/about4.jpg";
+import about5 from "../resource/about/about5.jpg";
+import about6 from "../resource/about/about6.jpg";
+import about7 from "../resource/about/about7.jpg";
+import about8 from "../resource/about/about8.jpg";
+import about9 from "../resource/about/about9.jpg";
+import about10 from "../resource/about/about10.jpg";
+import about11 from "../resource/about/about11.jpg";
+import about12 from "../resource/about/about12.jpg";
 
 export default function AboutIntroComponent() {
     return (

@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import "../css/index.css";
 import "../css/App.css";
 import {Container, Row, Col} from "react-bootstrap";
-import homePageDesign from "../image/home/homepage-design.svg";
-import homePageCode from "../image/home/homepage-code.svg";
+import homePageDesign from "../resource/home/homepage-design.svg";
+import homePageCode from "../resource/home/homepage-code.svg";
 
 export default function ImgCompareImgComponent() {
     const imgDesignRef = useRef(null);

@@ -5,9 +5,9 @@ import "../css/index.css";
 import "../css/App.css";
 import ProjectWidgetComponent from "./projectWidgetComponent";
 import FooterComponent from "./footerComponent";
-import foodex from "../image/home/foodex.png";
-import vstyle from "../image/home/vstyle.png";
-import fittingeasy from "../image/home/fittingeasy.png";
+import foodex from "../resource/home/foodex.png";
+import vstyle from "../resource/home/vstyle.png";
+import fittingeasy from "../resource/home/fittingeasy.png";
 
 export default function ProjectListComponent() {
     return (
