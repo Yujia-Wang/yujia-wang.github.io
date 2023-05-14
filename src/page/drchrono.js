@@ -1,12 +1,20 @@
 import "../css/index.css";
-import SidebarComponent from "../components/sidebarComponent";
-import AboutIntroComponent from "../components/aboutIntroComponent";
+import "../css/App.css";
 import FooterComponent from "../components/footerComponent";
+import ProjectSidebarComponent from "../components/projectSidebarComponent";
 
 function DrChrono() {
     return (
         <div>
-            <SidebarComponent />
+            <ProjectSidebarComponent
+              navItem={[
+                  {url: "#overview", name: "OVERVIEW"},
+                  {url: "#research", name: "RESEARCH"},
+                  {url: "#design", name: "DESIGN"},
+                  {url: "#evaluation", name: "EVALUATION"},
+                  {url: "#reflection", name: "REFLECTION"},
+              ]}
+            />
             <div className="content-wrapper">
 
                 <FooterComponent />
