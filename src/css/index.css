@@ -109,9 +109,12 @@ a:hover {
     border-radius: 1.2rem;
 }
 
+.divider-container {
+    padding-left: 8.4rem;
+    padding-right: 8.4rem;
+}
+
 .section-divider {
-    margin-left: 8.4rem;
-    margin-right: 8.4rem;
     height: 0.2rem;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #000000 50%, rgba(0, 0, 0, 0));
 }

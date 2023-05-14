@@ -11,6 +11,7 @@ import TextHighlightComponent from "../components/textHighlightComponent";
 import DividerComponent from "../components/dividerComponent";
 import ProsConsComponent from "../components/prosConsComponent";
 import ProblemBlockComponent from "../components/problemBlockComponent";
+import NextPreviousComponent from "../components/NextPreviousComponent";
 import foodex from "../image/foodex/foodex-pic.png";
 import foodexSolution from "../image/foodex/solution.png";
 import foodexProcess from "../image/foodex/process.svg";
@@ -530,7 +531,14 @@ function FoodEx() {
                       <p>Designing for users is not an easy job to do, especially when you need to consider about business as well, it becomes even harder. There are a lot of trade-offs you need to deal with. For example, during the design process, some restaurants owners would like to give away free drinks or sides instead of actual money, however, most users prefer to get the actual money rebate. Eventually, we decided to give restaurant owners the freedom to set up the discount levels, but it has to be money related. By this way, we help make sure the restaurant can still get profit meanwhile it doesn’t sacrifice users’ interests.</p>
                       <p>It leads me to think about the relationship between business and user objectives. In this case, as a relatively new service provider, to get into the market and become competitive, FoodEx can’t always think about its stakeholders and restaurant owners. It has to start focusing on users. Putting the users’ needs first is how we attract more users, and eventually benefit our stakeholders and restaurants. As Andrew Kucheriavy, the CEO & founder of Intechnic, said: you can’t reach your business objectives at the expense of those of your users.</p>
                   </div>
+                  <NextPreviousComponent
+                      previousText={"DrChrono"}
+                      previousLink={"/drchrono"}
+                      nextText={"V.style"}
+                      nextLink={"/vstyle"}
+                  />
               </ProjectSectionComponent>
+              <FooterComponent />
           </div>
       </div>
   );

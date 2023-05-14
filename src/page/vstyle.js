@@ -12,6 +12,7 @@ import DividerComponent from "../components/dividerComponent";
 import ProsConsComponent from "../components/prosConsComponent";
 import ProblemBlockComponent from "../components/problemBlockComponent";
 import VstyleFunComponent from "../components/vstyleFunComponent";
+import NextPreviousComponent from "../components/NextPreviousComponent";
 import vstyle from "../image/vstyle/vstyle-pic.png";
 import vstyleSolution from "../image/vstyle/solution.png";
 import vstyleProcess from "../image/vstyle/process.svg";
@@ -605,6 +606,12 @@ function Vstyle() {
               <DividerComponent />
               <ProjectSectionComponent title="FUN !" id="fun">
                   <VstyleFunComponent />
+                  <NextPreviousComponent
+                      previousText={"FoodEx"}
+                      previousLink={"/foodex"}
+                      nextText={"FittingEasy"}
+                      nextLink={"/fittingeasy"}
+                  />
               </ProjectSectionComponent>
               <FooterComponent />
           </div>

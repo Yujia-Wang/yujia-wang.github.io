@@ -331,5 +331,34 @@
     padding: 0.8rem 0;
 }
 
+.previous-page-link svg {
+    margin-right: 2rem;
+    transition: all .2s ease-in-out;
+}
 
+.previous-page-link a:hover {
+    color: #313843;
+}
 
+.previous-page-link a:hover svg {
+    color: #313843;
+    transform: scale(1.4);
+}
+
+.next-page-link {
+    text-align: right;
+}
+
+.next-page-link svg {
+    margin-left: 2rem;
+    transition: all .2s ease-in-out;
+}
+
+.next-page-link a:hover {
+    color: #313843;
+}
+
+.next-page-link a:hover svg {
+    color: #313843;
+    transform: scale(1.4);
+}

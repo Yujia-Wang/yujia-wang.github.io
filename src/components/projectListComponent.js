@@ -16,7 +16,7 @@ export default function ProjectListComponent() {
                 <h2>FEATURED PROJECTS</h2>
             </div>
             <Stack direction="horizontal" className="horizontal-project">
-                <Link to="/">
+                <Link to="/drchrono">
                     <ProjectWidgetComponent imgSource={fittingeasy} altText={"DrChrono Design System"} />
                 </Link>
                 <Link to="/foodex">
@@ -25,7 +25,7 @@ export default function ProjectListComponent() {
                 <Link to="/vstyle">
                     <ProjectWidgetComponent imgSource={vstyle} altText={"VStyle"} />
                 </Link>
-                <Link to="/">
+                <Link to="/fittingeasy">
                     <ProjectWidgetComponent imgSource={fittingeasy} altText={"FittingEasy"} />
                 </Link>
             </Stack>

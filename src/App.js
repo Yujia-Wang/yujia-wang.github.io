@@ -5,6 +5,8 @@ import Home from "./page/home";
 import About from "./page/about";
 import Vstyle from "./page/vstyle";
 import FoodEx from "./page/foodex";
+import FittingEasy from "./page/fittingeasy";
+import DrChrono from "./page/drchrono";
 
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
               <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="about" element={<About />} />
-                  <Route path="vstyle" element={<Vstyle />} />
+                  <Route path="drchrono" element={<DrChrono />} />
                   <Route path="foodex" element={<FoodEx />} />
+                  <Route path="vstyle" element={<Vstyle />} />
+                  <Route path="fittingeasy" element={<FittingEasy />} />
               </Routes>
           </ScrollToTopComponent>
       </BrowserRouter>

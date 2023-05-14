@@ -12,6 +12,8 @@ export default function TextHighlightComponent(props) {
         highlightColor = "linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.1) 50%)";
     } else if (color === "foodex") {
         highlightColor = "linear-gradient(to right, transparent 50%, rgba(252, 87, 89, 0.3) 50%)";
+    } else if (color === "fittingeasy") {
+        highlightColor = "linear-gradient(to right, transparent 50%, rgba(71, 159, 241, 0.3) 50%)";
     }
 
     useEffect(() => {
